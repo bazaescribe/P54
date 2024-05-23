@@ -1,0 +1,79 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+}
+
+.card {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  position: relative;
+  height: 480px;
+  overflow: hidden; /* Ensures content does not overflow */
+  transition: 700ms ease all;
+}
+
+.image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures image covers the entire card */
+  z-index: -1;
+}
+
+.content {
+  background: rgba(0, 0, 0, 0.1);
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  top: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: left;
+  transition: 300ms ease all;
+}
+
+.title {
+  padding: var(--base-size-150);
+  background: linear-gradient(rgba(0, 0, 0, 0.48), transparent);
+  hyphens: auto; /* Enable automatic hyphenation */
+  overflow-wrap: break-word; /* Allow breaking of words to wrap text */
+  word-wrap: break-word; /* Fallback for older browsers */
+  -webkit-hyphens: auto; /* Enable automatic hyphenation in WebKit browsers */
+  -ms-hyphens: auto; /* Enable automatic hyphenation in Internet Explorer */
+}
+
+.paragraph {
+  padding: var(--base-size-150);
+  margin: 0px;
+  transform: translateY(100%);
+  transition: 300ms ease all;
+  color: rgba(255, 255, 255, 0.80);
+  font-size: 20px;
+}
+
+.paragraph p {
+  margin-bottom: 0px !important;
+  font-size: 20px !important;
+}
+
+.card:hover {
+  box-shadow: 0px 16px 64px -8px rgba(255, 255, 255, 0.24), 0px 4px 6px rgba(0, 0, 0, 0.48);
+  transform: translateY(-2px);
+}
+
+.card:hover img {
+  transform: scale(1.2);
+}
+
+.card:hover .content {
+  background: rgba(0, 0, 0, 0.32);
+  backdrop-filter: blur(80px);
+}
+
+.card:hover .paragraph {
+  transform: translateY(0%);
+}

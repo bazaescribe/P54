@@ -1,0 +1,5 @@
+.aboutus{
+  background: var(--color-brand-light);
+  color: var(--color-brand-dark);
+  padding: var(--base-size-1000) 0px;
+}

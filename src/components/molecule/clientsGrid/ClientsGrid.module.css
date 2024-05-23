@@ -1,0 +1,25 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1px; /* Adjust the gap between grid items as needed */
+  background: rgba(255, 255, 255, 0.24);
+}
+
+.gridItem {
+  background: var(--color-brand-dark); /* Optional: Add background color to grid items */
+  padding: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Add shadow to grid items */
+}
+
+.image {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px; /* Optional: Add rounded corners to images */
+}
+
+@media screen and (max-width: 920px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

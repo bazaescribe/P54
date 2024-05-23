@@ -1,0 +1,38 @@
+.blobs {
+  position: relative;
+  width: 100%;
+  padding-bottom: 20%; /* Adjust this value to control the aspect ratio */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden; /* Ensure no scrollbars are created */
+  z-index: -1; /* Ensure blobs stay in the background */
+  clip-path: inset(0); /* Prevent overflow from causing scrollbars */
+}
+
+.blobA, .blobB {
+  position: absolute;
+  width: 72rem; /* Large width to create overflow */
+  height: 10rem; /* Large height to create overflow */
+}
+
+@media screen and (max-width: 920px) {
+  .blobs {
+      min-height: 100vh;
+  }
+  .blobA, .blobB {
+      width: 110rem; /* Large width for smaller screens */
+      height: 40rem; /* Large height for smaller screens */
+  }
+}
+
+.blobA {
+  left: 0; /* Positioning */
+  top: 0; /* Positioning */
+}
+
+.blobB {
+  left: 0; /* Positioning */
+  top: 0; /* Positioning */
+  opacity: 1; /* Optional: Adjust opacity to see the overlap better */
+}

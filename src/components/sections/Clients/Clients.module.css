@@ -1,0 +1,27 @@
+.clients {
+  display: flex;
+  gap: 2rem;
+}
+
+.clients > * {
+  flex: 1;
+}
+
+.right {
+  background: none;
+}
+
+.sticky {
+  position: sticky;
+  top: 8rem;
+}
+
+@media screen and (max-width: 920px) {
+  .clients {
+    flex-direction: column-reverse;
+  }
+
+  .clients > * {
+    flex: 0 0 100%; /* Ensure each item takes full width on smaller screens */
+  }
+}
