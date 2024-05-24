@@ -6,9 +6,11 @@ import Blobs from '@/components/atom/blobs'
 const Hero = () => {
   return(
     <div className={Styles.wrapper}>
-      <div className={Styles.background}>
+      {/* <div className={Styles.background}>
         <Blobs></Blobs>
-      </div>
+      </div> */}
+      <div className={Styles.animationB}></div>
+      <div className={Styles.animationA}></div>
       <div className={Styles.foreground}>
         <div className="container">
         <h1>
@@ -20,6 +22,7 @@ const Hero = () => {
         </div>
 
       </div>
+      
     </div>
   );
 

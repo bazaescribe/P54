@@ -30,12 +30,12 @@ const Clients = ({}) => {
         <ClientsGrid clients={clients} />
         <div className={styles.right}>
           <Sticky>
-            <Title sectionText="Our clients" titleText="Driving change togheter" />
+            <Title sectionText="Our partners" titleText="Delivering innovation" />
               <p>
-                For over a decade, we&#39;ve partnered with clients ranging from small startups to large enterprises, all united by a common goal: innovation. At P54, we believe in the power of fresh ideas to drive change, and we bring this ethos to every project, no matter the size.
+                For over a decade, we&#39;ve partnered with clients ranging from small startups to large enterprises, all united by a common goal: innovation.
               </p>
               <p>
-                Our focus is on solving real-world problems with creative and effective solutions. Our clients benefit from our deep expertise and commitment to pushing the boundaries of what&#39;s possible. Together, we&#39;re not just meeting today&#39;s challenges; we&#39;re anticipating and shaping the future.
+                Our clients benefit from our deep expertise and commitment to pushing the boundaries of what&#39;s possible. Together, we&#39;re not just meeting today&#39;s challenges; we&#39;re anticipating and shaping the future.
               </p>
           </Sticky>
         </div>

@@ -3,17 +3,51 @@
   position: relative;
 }
 
-.background, .foreground {
+.background, .foreground, .animationA, .animationB {
   grid-area: 1 / 1;
   position: relative;
 }
 
+@keyframes moveBackgroundA {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 100% 100%;
+    background-size: 100% 100%;
+  }
+}
+
+@keyframes moveBackgroundB {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 100% 100%;
+  }
+}
+
+.animationA {
+  background: linear-gradient(54deg, transparent 40%, var(--color-brand-accent) 40%, var(--color-brand-accent) 55%, transparent 55%);
+  background-size: 200% 200%;
+  animation: moveBackgroundA 24s linear infinite alternate; /* Adjust duration and easing */
+}
+
+.animationB {
+  background: linear-gradient(54deg, transparent 60%, var(--color-brand-alt) 60%, var(--color-brand-alt) 75%, transparent 75%);
+  background-size: 200% 200%;
+  animation: moveBackgroundB 16s ease-in-out infinite alternate; /* Adjust duration and easing */
+  opacity: 0.9;
+}
+
 .foreground {
   padding: 80px 0px;
-  min-height: 100vh;
+  min-height: 100svh;
   display: flex;
   align-content: center;
   align-items: center;
+  animation: 1s ease all;
+  /* background: linear-gradient(transparent 93px, black 93px); */
 }
 
 .foreground h1, .foreground h6 {

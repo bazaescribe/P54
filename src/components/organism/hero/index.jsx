@@ -6,7 +6,9 @@ import Blobs from '@/components/atom/blobs'
 const Hero = () => {
   return(
     <header className={Styles.hero}>
-      <Blobs></Blobs>
+      {/* <Blobs></Blobs> */}
+      <div className="animationA"></div>
+      <div className="animationB"></div>
       <div className={Styles.content}>
         <div className="container">
         <h1>Innovation unleashed</h1>
