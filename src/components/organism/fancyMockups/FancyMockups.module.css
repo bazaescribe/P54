@@ -1,0 +1,17 @@
+.mockupContainer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  margin-bottom: -10rem;
+}
+
+.mockup {
+  position: absolute;
+  transition: transform 0.5s cubic-bezier(0.25, 0.1, 0.25, 1); /* Smooth transition */
+  line-height: 0;
+  box-shadow: 2px 2px 2px red;
+  margin-bottom: 32px;
+}

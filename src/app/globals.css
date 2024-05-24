@@ -565,3 +565,10 @@ a {
   flex: 1; /* This distributes equal width among child elements */
   box-sizing: border-box; /* To include padding and border in the width calculation */
 }
+
+@media screen and (max-width:920px) {
+  .row {
+    flex-direction: column;
+    gap: 80px;
+  }
+}

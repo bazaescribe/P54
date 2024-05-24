@@ -9,23 +9,25 @@ import Sticky from '@/components/molecule/Sticky';
 const AboutUs = () =>{
   return(
     <section className={Styles.aboutus}>
-      <div className="container row gap-200">
-        <div>
-          <Sticky>
-            <Title sectionText="About us" titleText="Here's to the crazy ones" />
-            <p>
-              At P54, we celebrate the unconventional, the bold, and the visionary. We believe that the greatest innovations come from those who challenge the norm. Our mission is to ignite bold ideas and transform them into groundbreaking realities, driving growth and fostering innovation.
-            </p>
-            <p>
-              Built on the pillars of creativity, collaboration, and excellence, P54 has empowered leading organizations to shape their future. Our multidisciplinary approach integrates strategy, design, and technology to deliver solutions that are as unique as the challenges they address.
-            </p>
-            <p>
-              Join us in celebrating the crazy ones – the dreamers, the innovators, the pioneers. Together, let&#39;s create the future.
-            </p>
-          </Sticky>
-        </div>
-        <div>
-          <Image src="/assets/concepts.png" height={1700} width={600} alt="Concepts images"></Image>
+      <div className="container">
+        <div className="row gap-200">
+          <div>
+            <Sticky>
+              <Title sectionText="About us" titleText="Here's to the crazy ones" />
+              <p>
+                At P54, we celebrate the bold and visionary. We believe innovation comes from challenging the norm. Our mission is to transform bold ideas into groundbreaking realities, driving growth and fostering innovation.
+              </p>
+              <p>
+                P54 empowers organizations to shape their future with creativity, collaboration, and excellence. Our multidisciplinary approach integrates strategy, design, and technology to deliver unique solutions.
+              </p>
+              <p>
+                Together, let&#39;s create the future.
+              </p>
+            </Sticky>
+          </div>
+          <div>
+            <Image src="/assets/concepts.png" height={1700} width={600} alt="Concepts images"></Image>
+          </div>
         </div>
       </div>
     </section>

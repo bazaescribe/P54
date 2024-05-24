@@ -4,7 +4,7 @@ import styles from "./page.module.css";
 // component imports
 import Hero from '@/components/organism/herotwo';
 import Navigation from '@/components/molecule/Navigation';
-import AboutUs from '@/components/sections/AboutUs';
+import AboutUs from '@/components/sections/AboutUsII';
 import Clients from '@/components/sections/Clients/clients';
 import Services from '@/components/sections/Services'
 
