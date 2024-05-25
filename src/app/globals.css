@@ -4,8 +4,9 @@
   /* Colors */
   --color-brand-dark: black;
   --color-brand-light: white;
-  --color-brand-accent: #276FBF;
-  --color-brand-alt: #F03A47  ;
+  --color-brand-accent: #5E239D;
+  --color-brand-alt: #F61067;
+  --color-brand-third: #037171;
 
   --base-size-025: 0.25rem;
   --base-size-050: 0.5rem;

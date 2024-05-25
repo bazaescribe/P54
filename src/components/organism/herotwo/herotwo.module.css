@@ -3,7 +3,7 @@
   position: relative;
 }
 
-.background, .foreground, .animationA, .animationB {
+.background, .foreground, .animationA, .animationB, .animationC {
   grid-area: 1 / 1;
   position: relative;
 }
@@ -28,16 +28,15 @@
 }
 
 .animationA {
-  background: linear-gradient(54deg, transparent 40%, var(--color-brand-accent) 40%, var(--color-brand-accent) 55%, transparent 55%);
+  background: linear-gradient(54deg, transparent 20%, var(--color-brand-accent) 20%, var(--color-brand-accent) 30%, transparent 30%);
   background-size: 200% 200%;
   animation: moveBackgroundA 24s linear infinite alternate; /* Adjust duration and easing */
 }
 
 .animationB {
-  background: linear-gradient(54deg, transparent 60%, var(--color-brand-alt) 60%, var(--color-brand-alt) 75%, transparent 75%);
+  background: linear-gradient(54deg, transparent 40%, var(--color-brand-alt) 40%, var(--color-brand-alt) 50%, transparent 50%);
   background-size: 200% 200%;
   animation: moveBackgroundB 16s ease-in-out infinite alternate; /* Adjust duration and easing */
-  opacity: 0.9;
 }
 
 .foreground {
@@ -47,7 +46,7 @@
   align-content: center;
   align-items: center;
   animation: 1s ease all;
-  /* background: linear-gradient(transparent 93px, black 93px); */
+  background: linear-gradient(black 95%, transparent 95%);
 }
 
 .foreground h1, .foreground h6 {
