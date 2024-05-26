@@ -8,6 +8,9 @@
   --color-brand-alt: #F61067;
   --color-brand-third: #037171;
 
+  --color-transparent-light: rgba(255, 255, 255, 0.16);
+  --color-transparent-dark: rgba(0, 0, 0, 0.1);
+
   --base-size-025: 0.25rem;
   --base-size-050: 0.5rem;
   --base-size-075: 0.75rem;
@@ -572,4 +575,32 @@ a {
     flex-direction: column;
     gap: 80px;
   }
+}
+
+
+/* Button */
+
+.btn {
+  font-size: 14px;
+  padding: 8px 24px;
+  border: none;
+  border-radius: 24px;
+}
+
+.main {
+  background: linear-gradient(white 50%, var(--color-brand-accent) 50%);
+  background-size: 100% 200%;
+  color: black;
+  transition: 250ms ease-out all;
+}
+
+.main:hover {
+  background-position: 0% 100%;
+  color: white;
+}
+
+.secondary {
+  background: none;
+  color: white;
+  border: 1px solid var(--color-transparent-light);
 }

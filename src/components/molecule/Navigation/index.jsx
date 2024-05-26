@@ -24,16 +24,26 @@ const Navigation = () => {
   }, []);
 
   return (
-    <nav className={`${styles.nav} ${scrolled ? styles.scrolled : ''}`}>
-      <div className="container d-flex justify-content-between">
-        <div>
-          <Image src='/brand/logo.png' width={60} height={24} alt='Logo' />
+    <>
+      <nav className={`${styles.nav} ${scrolled ? styles.scrolled : ''}`}>
+        <div className={styles.navContainer}>
+          <div className='d-flex align-items-center'>
+            <Image src='/brand/logo.png' width={60} height={24} alt='Logo' />
+          </div>
+          <div className={styles.menu}>
+            <button className='btn main'>Connect</button>
+          </div>
         </div>
-        <div>
-          Connect
+      </nav>
+      <div className={`${styles.floatingActionContainer} ${scrolled ? styles.fabScrolled : ''}`}>
+        <div className={styles.wrapper}>
+          <div className={styles.fab}>
+            Connect
+          </div>
         </div>
       </div>
-    </nav>
+      
+    </>
   );
 };
 
